@@ -13,3 +13,13 @@ jobs:
         run: |
           node -v
           npm -v
+
+  run-windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: Directory Powershell
+        run: Get-location
+
+      - name: Directory Bash
+        run: pwd
+        shell: bash
